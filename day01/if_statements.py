@@ -99,7 +99,7 @@ if 0 <= score <= 100:
     else:
         print('F')
 else:
-    pass
+    print('Invalid Score')
 
 
 """
