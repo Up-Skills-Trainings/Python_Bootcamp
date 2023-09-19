@@ -50,5 +50,66 @@ print('----------------------')
 
 print('----------------------')
 
+s = 'python programming language'
 
+# s = s.capitalize()
+s = s.title()
+print(s)
+
+s = "            Python           "
+s = s.strip()  # trim method of java
+
+print(s)
+
+
+s = 'JAVA'
+
+print( s.index('A'))
+print(s.rindex('A'))
+
+s = 'Java Java'
+
+s = s.replace('Java', 'Python', 1)
+
+print(s)
+
+s = 'C# C# Python'
+
+s = s.replace(' C#', ' Java')
+print(s)
+
+
+s = 'Java jAVA java JAVA Python Python'
+
+count_java = s.lower().count('java')
+count_python = s.count('Python')
+
+print(count_java)
+print(count_python)
+
+
+s1 = 'java'
+s2 = 'JAVA'
+
+print( s1.lower() == s2.lower())  # ignore case
+
+
+s = 'Java'
+
+print(s[0].islower())
+print(s[0].isupper() )
+
+
+s = 'a'
+
+print(s.isalpha())
+
+s = '1'
+
+print(s.isdigit())
+
+
+s = 'Cydeo School'
+
+print(s.istitle())
 
