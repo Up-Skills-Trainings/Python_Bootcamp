@@ -2,7 +2,6 @@ import numbers
 
 
 class Employee:
-
     is_human = True  # similar to static variable of Java
     planet = 'Earth'
 
@@ -15,8 +14,7 @@ class Employee:
         print(f'{self.name} is working')
 
     def __str__(self):
-        return f'name: {self.name}, job_title: {self.job_title}'
-
+        return f'{type(self).__name__}{self.__dict__}'
 
 
 employee1 = Employee()
@@ -50,7 +48,6 @@ employee1.work()
 employee2.work()
 employee3.work()
 employee4.work()
-
 
 print(employee1)
 print(employee2)
