@@ -14,6 +14,9 @@ class Employee:
     def work(self):
         print(f'{self.name} is working')
 
+    def __str__(self):
+        return f'name: {self.name}, job_title: {self.job_title}'
+
 
 
 employee1 = Employee()
@@ -47,3 +50,9 @@ employee1.work()
 employee2.work()
 employee3.work()
 employee4.work()
+
+
+print(employee1)
+print(employee2)
+print(employee3)
+print(employee4)
