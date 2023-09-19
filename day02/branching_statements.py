@@ -19,3 +19,17 @@ for i in range(1, 6):
         pass
     print(i)
 
+
+def function():
+    pass
+
+if True:
+    pass
+
+class Class:
+
+    def method(self):
+        pass
+
+    pass
+
