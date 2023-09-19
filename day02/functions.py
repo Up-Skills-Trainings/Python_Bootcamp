@@ -81,9 +81,9 @@ def sum(n1: numbers, n2: numbers, n3: numbers = 0, n4: numbers = 0) -> numbers:
     return n1 + n2 + n3 + n4
 
 
-print( sum(10, 20) )
+print(sum(10, 20))
 
-print( sum(10, 20, 30))
+print(sum(10, 20, 30))
 
 print(sum(10, 20, 30, 40))
 
@@ -91,3 +91,27 @@ print(sum(10, 20, 30, 40))
 class test:
     def method(self):
         pass
+
+
+print('----------------------------------------')
+
+
+def concat(a: str, b, c='', d='', e=''):
+    print(f'{a} {b} {c} {d} {e}'.strip())
+
+
+concat('Cydeo', 'School')
+concat('Python', 3, 2.5)
+concat('Python', 3, 2.5, True)
+concat('Python', 3, 2.5, True, False)
+
+
+"""
+1. Declaring
+2. parameters
+3. restricting parameter' data type
+4. setting default value to parameter
+5. restricting return type
+
+Dynamic Typing
+"""
