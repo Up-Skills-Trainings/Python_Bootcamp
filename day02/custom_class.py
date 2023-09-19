@@ -3,10 +3,16 @@ import numbers
 
 class Employee:
 
+    is_human = True  # similar to static variable of Java
+    planet = 'Earth'
+
     def __init__(self, name: str = 'Unknown', job_title: str = 'Janitor', salary: numbers = 0):
         self.name = name
         self.job_title = job_title
         self.salary = salary
+
+    def work(self):
+        print(f'{self.name} is working')
 
 
 
@@ -32,3 +38,12 @@ employee4 = Employee('Yulia', 'Python Developer', 150_000)
 print(employee4.name)
 print(employee4.job_title)
 print(employee4.salary)
+
+# print(Employee.name)
+print(Employee.is_human)
+print(Employee.planet)
+
+employee1.work()
+employee2.work()
+employee3.work()
+employee4.work()
