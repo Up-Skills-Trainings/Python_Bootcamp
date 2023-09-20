@@ -31,7 +31,7 @@ class Person:
         self.__age = age
 
     def __str__(self):
-        return f'{type(self).__name__}{self.__dict__}'
+        return f'{type(self).__name__}{ str(self.__dict__).replace("_Person__", "")}'
 
 
 
