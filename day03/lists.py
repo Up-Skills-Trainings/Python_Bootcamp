@@ -1,7 +1,7 @@
 groceries_list = ['Eggs', 'Milk', 'Rice']
 
 groceries_list.append('Chicken')
-groceries_list.extend(('Beef', 'Oranges', 'Onion'))
+groceries_list.extend(  ('Beef', 'Oranges', 'Onion') )
 
 print(len(groceries_list))
 print(groceries_list)
