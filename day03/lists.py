@@ -84,9 +84,7 @@ for i in range(1, 6):
     i += 2
     print(i)
 
-
 print('------------------------------------')
-
 
 nums = [60, 500, 10, 20, 15, 5, 0]
 
@@ -95,5 +93,89 @@ nums = [60, 500, 10, 20, 15, 5, 0]
 nums.sort(reverse=True)
 
 print(nums)
+
+print('------------------------------------')
+
+list1 = [10, 20, 30, 40]
+
+# list1 = list( reversed(list1) )
+
+list1.reverse()
+
+print(list1)
+
+print('------------------------------------')
+
+tuple_elements = ('Java', 'Python', 'C#', 'Ruby')
+
+list_elements = list(tuple_elements)
+list_elements[-2] = 'C++'
+list_elements.append('SWIFT')
+
+print(list_elements)
+
+tuple_elements = tuple(list_elements)
+
+print(tuple_elements)
+
+print('------------------------------------')
+
+list1 = [1, 2, 3, 4, 5]
+list2 = [1, 2, 3, 4, 5]
+
+print(list1 is list2)
+
+tuple1 = (1, 2, 3, 4, 5)
+tuple2 = (1, 2, 3, 4, 5)
+
+print(tuple1 is tuple2)
+
+
+print('------------------------------------')
+
+
+groceries_list = ['Eggs', 'Milk', 'Rice']
+
+groceries_list.append('Chicken')
+groceries_list.extend(('Beef', 'Oranges', 'Onion'))
+
+print(groceries_list)
+
+groceries_list.remove('Beef')
+
+print(groceries_list)
+
+groceries_list.pop()
+
+print(groceries_list)
+
+groceries_list.pop(1)
+
+print(groceries_list)
+
+groceries_list.insert(2, 'Apple')
+
+print(groceries_list)
+
+
+print( groceries_list.index('Eggs'))
+
+nums = [1, 2, 3, 4, 5, 1, 1, 1, 1, 1]
+
+print(nums.count(1))
+
+
+print('--------------- Comprehensions -------------------------')
+
+nums = []
+
+for x in range(1, 51):
+    nums.append(x)
+
+print(nums)
+
+
+
+
 
 
