@@ -10,7 +10,7 @@ class Person:
 class Employee(Person):
 
     def __init__(self, name: str, age: int, job_title: str, company_name: str = 'Unknown', salary: int = 0):
-        super().__init__(name, age)
+        super().__init__(name, age)  # calling parent class' constructor
         self.job_title = job_title
         self.company_name = company_name
         self.salary = salary
@@ -28,7 +28,7 @@ class Developer(Employee):
 class Teacher(Employee):
 
     def __init__(self, name: str, age: int, job_title: str = "Teacher", company_name: str = 'Unknown', salary: int = 0):
-        super().__init__(name, age, job_title, company_name, salary)
+        super().__init__(name, age, job_title, company_name, salary) # calling parent class' constructor
 
     def work(self):
         print(f'{self.name} is teaching')
