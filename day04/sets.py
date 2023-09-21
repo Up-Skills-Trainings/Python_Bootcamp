@@ -30,13 +30,8 @@ print(unique_element)
 
 print(n)
 
-print( help( str.istitle ) )
+# print( help( str.istitle ) )
 
-
-print('----------------pop---------------------')
-
-# pop(): removes the first element from the set
-numbers = {10, 20, 30, 40, 50, 60}
 
 
 
@@ -46,7 +41,9 @@ print('-------------difference-----------------------')
 s1 = {'Java', 'Python', 'C#'}
 s2 = {'Ruby', 'Java', 'C++', 'Swift'}
 
+s3 = s1.difference(s2)
 
+print(s3)
 
 
 print('----------------------intersection-------------------')
@@ -55,7 +52,9 @@ print('----------------------intersection-------------------')
 set1 = {'Java', 'Python', 'C#', 'Cydeo'}
 set2 = {'C++', 'Ruby', 'Swift', 'Java', 'Python'}
 
+set3 = set1.intersection(set2)
 
+print(set3)
 
 
 print('------------------different_update-------------------')
@@ -64,7 +63,8 @@ print('------------------different_update-------------------')
 a1 = {'Book', 'Pen', 'Apple', 'Cherry', 'Coffee'}
 a2 = {'Book', 'Apple', 'Banana', 'Grape', 'TV'}
 
-
+a1.difference_update(a2)
+print(a1)
 
 
 print('---------------intersection_update----------------------')
@@ -72,6 +72,10 @@ print('---------------intersection_update----------------------')
 # intersection_update(): removes the uncommon elements of first & second sets
 b1 = {'Cydeo', 'Python', 'Java', 'C#', 'Wooden Spoon', 'Ruby', 'Swift'}
 b2 = {'Wooden Spoon', 'Python', 'Cydeo'}
+
+b1.intersection_update(b2)
+
+print(b1)
 
 
 
@@ -82,8 +86,9 @@ print('------------------symmetric_update-------------------')
 e1 = {'Apple', 'Banana', 'Cherry'}
 e2 = {'Grape', 'Strawberry', 'Banana', 'Mango', 'Lemon', 'Apple'}
 
+e3 = e1.symmetric_difference(e2)
 
-
+print(e3)
 
 
 
