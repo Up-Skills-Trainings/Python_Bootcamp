@@ -1,3 +1,4 @@
+import math
 import numbers
 
 from abc import ABC, abstractmethod
@@ -43,14 +44,23 @@ class Square(Shape):
 
 class Circle(Shape):
 
+    def __init__(self, radius):
+        super().__init__()
+        self.radius = radius
+
     def area(self) -> numbers:
-        pass
+        return math.pow(self.radius) * math.pi
 
 
 class Rectangle(Shape):
 
+    def __init__(self, width, length):
+        super().__init__()
+        self.width = width
+        self.length = length
+
     def area(self) -> numbers:
-        pass
+        return self.width * self.length
 
 
 class Cube(Shape, Volume):
