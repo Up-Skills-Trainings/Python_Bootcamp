@@ -48,3 +48,17 @@ json_object = json.dumps(students, indent=3)   # converting dictionary object to
 jason_file.write(json_object)
 
 
+"""
+Web Automation:
+    BeautifulSoup4
+    request
+    pytest
+    robot
+    
+Web Development:
+    Django
+    FastAPI
+    flask
+    ...
+"""
+
